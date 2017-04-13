@@ -5,6 +5,7 @@
  */
 package morracinese2.pkg0;
 
+import ModelloMorraCinese.*;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,6 +22,11 @@ public class MorraCinese20 extends Application {
     public static Stage stag;
     private static Stage controller;
     private static Stage help;
+    private static Stage Online;
+    private static Stage GraficaOnline;
+    
+    public static MorraCineseMultyPlayer m=new MorraCineseMultyPlayer();
+    
 
     public String nome = "";
 
@@ -76,6 +82,30 @@ public class MorraCinese20 extends Application {
         stg.setScene(scene);
         stg.show();
     }
+    
+    public void startOnline(String s) throws IOException{
+        Stage stg = new Stage();
+        Online = stg;
+        stg.setTitle("Morra Cinese");
+        Parent root = FXMLLoader.load(getClass().getResource(s));
+	root.setStyle("-fx-background-image: url(file:sfondo.jpg);");
+        Scene scene = new Scene(root);
+        stg.resizableProperty().setValue(Boolean.FALSE);
+        stg.setScene(scene);
+        stg.show();
+    }
+    
+     public void startMulty(String s) throws IOException{
+        Stage stg = new Stage();
+        GraficaOnline = stg;
+        stg.setTitle("Morra Cinese");
+        Parent root = FXMLLoader.load(getClass().getResource(s));
+	root.setStyle("-fx-background-image: url(file:sfondo.jpg);");
+        Scene scene = new Scene(root);
+        stg.resizableProperty().setValue(Boolean.FALSE);
+        stg.setScene(scene);
+        stg.show();
+    }
 
     public void setNome(String n) {
         this.nome = n;
@@ -91,6 +121,10 @@ public class MorraCinese20 extends Application {
 
     public void closeHelp() {
         help.close();
+    }
+    
+    public void closeOnline() {
+        Online.close();
     }
 
     public static void main(String[] args) throws Exception {

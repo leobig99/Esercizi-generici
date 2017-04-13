@@ -37,6 +37,20 @@ public class StartFXMLController implements Initializable {
         m.startGioco("FXMLDocument.fxml");
         m.closeStart();
     }
+    
+    @FXML
+    protected void StartMultyPlayer(ActionEvent event) throws IOException, InterruptedException {
+        String str = nome.getText();
+        m.setNome(str);
+        s = str;
+        m.startOnline("FXMLMultyPlayer.fxml");
+        m.closeStart();
+    }
+    
+    protected void StartGarficaMultyPlayer() throws IOException, InterruptedException {
+        m.startMulty("FXMLGraficaMultyPlayer.fxml");
+    }
+
 
     @FXML
     protected void New(ActionEvent event) throws IOException, InterruptedException, Exception {
