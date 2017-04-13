@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="morracinese2.pkg0.HelpFXMLController">
+   <children>
+      <Text layoutX="41.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Il giocatore sceglie un simbolo:" wrappingWidth="471.13671875" />
+      <Text layoutX="41.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGOLE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogni segno ne batte un altro, secondo questo schema:" />
+      <Text layoutX="57.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-il sasso rompe le forbici" />
+      <Text layoutX="58.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-le forbici tagliano la carta" />
+      <Text layoutX="59.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-la carta cattura il sasso" />
+      <Text layoutX="37.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUNTEGGIO">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si guadagna un punto ogni volta che si batte l'avversario." />
+      <Button layoutX="268.0" layoutY="371.0" mnemonicParsing="false" onAction="#Return" text="Return" />
+      <Text layoutX="37.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOTTONI">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reset: resetta i punti" />
+      <Text layoutX="37.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New: Permette di ricominciare il gioco (fa tornare alla shermata iniziale)" />
+   </children>
+</AnchorPane>
