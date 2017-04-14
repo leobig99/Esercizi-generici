@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="664.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memory.FXMLDocumentController">
+   <children>
+      <Button layoutX="532.0" layoutY="290.0" mnemonicParsing="false" onAction="#mossadieci" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="404.0" layoutY="290.0" mnemonicParsing="false" onAction="#mossanove" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="284.0" layoutY="290.0" mnemonicParsing="false" onAction="#mossaotto" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="161.0" layoutY="290.0" mnemonicParsing="false" onAction="#mossasette" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="38.0" layoutY="290.0" mnemonicParsing="false" onAction="#mossasei" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="532.0" layoutY="97.0" mnemonicParsing="false" onAction="#mossacinque" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="404.0" layoutY="97.0" mnemonicParsing="false" onAction="#mossaquatto" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="284.0" layoutY="97.0" mnemonicParsing="false" onAction="#mossatre" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="161.0" layoutY="97.0" mnemonicParsing="false" onAction="#mossadue" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Button layoutX="35.0" layoutY="97.0" mnemonicParsing="false" onAction="#mossauno" prefHeight="136.0" prefWidth="91.0" text="Button" />
+      <Text layoutX="278.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMORY">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="uno" disable="true" fitHeight="143.0" fitWidth="98.0" layoutX="33.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="due" disable="true" fitHeight="136.0" fitWidth="98.0" layoutX="157.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="sei" disable="true" fitHeight="136.0" fitWidth="98.0" layoutX="35.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="sette" disable="true" fitHeight="135.0" fitWidth="98.0" layoutX="157.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="tre" disable="true" fitHeight="136.0" fitWidth="114.0" layoutX="279.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/BackLeggenda.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="otto" disable="true" fitHeight="135.0" fitWidth="98.0" layoutX="279.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="quattro" disable="true" fitHeight="136.0" fitWidth="98.0" layoutX="402.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cinque" disable="true" fitHeight="135.0" fitWidth="98.0" layoutX="529.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="nove" disable="true" fitHeight="135.0" fitWidth="98.0" layoutX="402.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dieci" disable="true" fitHeight="135.0" fitWidth="98.0" layoutX="528.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="35.0" layoutY="35.0" mnemonicParsing="false" onAction="#reset" text="RESET" />
+      <Text layoutX="528.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOSSE:" />
+      <Label fx:id="nMosse" layoutX="577.0" layoutY="39.0" />
+   </children>
+</AnchorPane>
