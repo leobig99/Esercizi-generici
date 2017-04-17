@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="https://www.w3schools.com"
+           elementFormDefault="qualified">
+    <xs:element name="calcolatrice">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="operazione" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="moltiplicazione">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="primo" type="xs:integer"/>
+                                        <xs:element name="secondo" type="xs:integer"/>
+                                        <xs:element name="risultato" type="xs:integer"/>             
+                                    </xs:sequence> 
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="operazione" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="divisione">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="primo" type="xs:interger"/>
+                                        <xs:element name="secondo" type="xs:integer"/>
+                                        <xs:element name="risultato" type="xs:integer"/>             
+                                    </xs:sequence> 
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="operazione" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sottrazione">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="primo" type="xs:interger"/>
+                                        <xs:element name="secondo" type="xs:integer"/>
+                                        <xs:element name="risultato" type="xs:integer"/>             
+                                    </xs:sequence> 
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="operazione" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sottrazione">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="primo" type="xs:interger"/>
+                                        <xs:element name="secondo" type="xs:integer"/>
+                                        <xs:element name="risultato" type="xs:integer"/>             
+                                    </xs:sequence> 
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>      
+    </xs:element>
+</xs:schema>

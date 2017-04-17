@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<cassettalettere>
+    <lettera>
+        <mittente>Sede di governo universale</mittente>
+        <data>2017-04-17</data>
+        <destinatario>Andrea Zoccarato</destinatario>
+        <saluto>Magnifico nostro signore, dio onnipotente</saluto>
+        <corpo>
+            <paragrafo>
+                la informiamo che la sua megavilla sulla Luna e la pistola a buchi neri
+                sono stati ultimati.
+            </paragrafo>
+        </corpo>
+        <chiusura>Il multiverso si compiace della sua magnificenza e le augura buone vacanze. PS:La Doni è stata fatta esplodere come suo ordine.</chiusura>
+        <firma>Facentefunzione di imperatore multiuniversale</firma>
+    </lettera>
+</cassettalettere>

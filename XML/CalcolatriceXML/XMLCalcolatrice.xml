@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<calcolatrice>
+    <operazione>
+        <moltiplicazione>
+            <primo>2788 </primo>
+            <secondo>2</secondo>
+            <risultato>5576</risultato>
+        </moltiplicazione>
+    </operazione>
+    <operazione>
+        <moltiplicazione>
+            <primo>4</primo>
+            <secondo>2</secondo>
+            <risultato>8</risultato>
+        </moltiplicazione>
+    </operazione>
+    <operazione>
+        <sottrazione>
+            <primo>4</primo>
+            <secondo>2</secondo>
+            <risultato>2</risultato>
+        </sottrazione>
+    </operazione>
+    <operazione>
+        <addizione>
+            <primo>4</primo>
+            <secondo>2</secondo>
+            <risultato>6</risultato>
+        </addizione>
+    </operazione>
+    <operazione>
+        <divisione>
+            <primo>16</primo>
+            <secondo>2</secondo>
+            <risultato>8</risultato>
+        </divisione>
+    </operazione>
+    <operazione>
+        <sottrazione>
+            <primo>16</primo>
+            <secondo>2</secondo>
+            <risultato>14</risultato>
+        </sottrazione>
+    </operazione>
+</calcolatrice>

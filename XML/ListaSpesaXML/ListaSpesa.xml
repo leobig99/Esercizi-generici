@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Lista-Spesa>
+    <articolo>
+        <nome>pane</nome>
+        <costo>0.86</costo>
+    </articolo>
+    <articolo>
+        <nome>farina</nome>
+        <costo>1.54</costo>
+    </articolo>
+    <articolo>
+        <nome>fiamma ossidrica</nome>
+        <costo>32.99</costo>
+    </articolo>
+    <articolo>
+        <nome>bazooka</nome>
+        <costo>999.9</costo>
+    </articolo>
+    <articolo>
+        <nome>forma intera di grana</nome>
+        <costo>600.0</costo>
+    </articolo>
+    <articolo>
+        <nome>Martello distruggitore di iphone</nome>
+        <costo>0.30</costo>
+    </articolo>
+    <articolo>
+        <nome>strudel per devide</nome>
+        <costo>5.32</costo>
+    </articolo>
+</Lista-Spesa>

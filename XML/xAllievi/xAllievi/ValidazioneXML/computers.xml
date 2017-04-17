@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="computers.xsl" ?>
+<!--
+
+  Simple XML that represent a computer.
+  The tag keyboard must contain a string.
+  Mouse has to match a patter "x button".
+  Monitor must contain a valid standard name.
+
+-->
+<listaComputer
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schemaComputer.xsd">
+	<computer>
+		<keyboard>105 keys</keyboard>
+		<mouse>3 button</mouse>
+		<monitor>vga</monitor>
+	</computer>
+	<computer>
+		<keyboard>115 keys</keyboard>
+		<mouse>2 button</mouse>
+		<monitor>svga</monitor>
+	</computer>
+
+</listaComputer>
