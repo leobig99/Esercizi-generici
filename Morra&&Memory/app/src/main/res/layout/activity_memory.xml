@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memory"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/verde"
+        android:layout_marginTop="25dp"
+        android:textSize="35dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f1"
+            android:onClick="mossa"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f2"
+            android:onClick="mossa"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f3"
+            android:onClick="mossa"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f4"
+            android:onClick="mossa"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f5"
+            android:onClick="mossa"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f6"
+            android:onClick="mossa"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f7"
+            android:onClick="mossa"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backleggenda"
+            android:id="@+id/f8"
+            android:onClick="mossa"/>
+    </GridLayout>
+
+</LinearLayout>
+
