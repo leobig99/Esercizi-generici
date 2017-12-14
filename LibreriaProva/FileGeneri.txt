@@ -1,0 +1,50 @@
+GENERE{ CodiceGenere: 2 Descrizione: Letteratura Italiana }
+  LIBRO{ CodiceLibro: 6, Titolo: Storie di neve, Editore: Mondadori, Prezzo: 22.0 }
+  LIBRO{ CodiceLibro: 7, Titolo: Le voci del bosco, Editore: Biblioteca dell'Immagine, Prezzo: 11.0 }
+  LIBRO{ CodiceLibro: 8, Titolo: Finchè il cuculo canta, Editore: Biblioteca dell'Immagine, Prezzo: 11.36 }
+  LIBRO{ CodiceLibro: 9, Titolo: I Fantasmi di pietra, Editore: Mondadori, Prezzo: 17.0 }
+
+GENERE{ CodiceGenere: 2 Descrizione: Letteratura Italiana }
+  LIBRO{ CodiceLibro: 6, Titolo: Storie di neve, Editore: Mondadori, Prezzo: 22.0 }
+  LIBRO{ CodiceLibro: 7, Titolo: Le voci del bosco, Editore: Biblioteca dell'Immagine, Prezzo: 11.0 }
+  LIBRO{ CodiceLibro: 8, Titolo: Finchè il cuculo canta, Editore: Biblioteca dell'Immagine, Prezzo: 11.36 }
+  LIBRO{ CodiceLibro: 9, Titolo: I Fantasmi di pietra, Editore: Mondadori, Prezzo: 17.0 }
+GENERE{ CodiceGenere: 4 Descrizione: Viaggi }
+  LIBRO{ CodiceLibro: 10, Titolo: Un indovino mi disse, Editore: Longanesi, Prezzo: 25.0 }
+        LIBRERIA{ CodiceLibreria: 1, Nome: Moderna, COPIE: 1 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 2 }
+
+GENERE{ CodiceGenere: 2 Descrizione: Letteratura Italiana }
+  LIBRO{ CodiceLibro: 6, Titolo: Storie di neve, Editore: Mondadori, Prezzo: 22.0 }
+  LIBRO{ CodiceLibro: 7, Titolo: Le voci del bosco, Editore: Biblioteca dell'Immagine, Prezzo: 11.0 }
+  LIBRO{ CodiceLibro: 8, Titolo: Finchè il cuculo canta, Editore: Biblioteca dell'Immagine, Prezzo: 11.36 }
+  LIBRO{ CodiceLibro: 9, Titolo: I Fantasmi di pietra, Editore: Mondadori, Prezzo: 17.0 }
+GENERE{ CodiceGenere: 4 Descrizione: Viaggi }
+  LIBRO{ CodiceLibro: 10, Titolo: Un indovino mi disse, Editore: Longanesi, Prezzo: 25.0 }
+        LIBRERIA{ CodiceLibreria: 1, Nome: Moderna, COPIE: 1 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 2 }
+GENERE{ CodiceGenere: 6 Descrizione: Romanzo }
+  LIBRO{ CodiceLibro: 1, Titolo: Gomorra, Editore: Mondadori, Prezzo: 21.5 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 20 }
+  LIBRO{ CodiceLibro: 11, Titolo: L'alchimista, Editore: Bompiani, Prezzo: 18.0 }
+  LIBRO{ CodiceLibro: 12, Titolo: Il Cammino di Santiago, Editore: Bompiani, Prezzo: 18.0 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 2 }
+
+GENERE{ CodiceGenere: 2 Descrizione: Letteratura Italiana }
+  LIBRO{ CodiceLibro: 6, Titolo: Storie di neve, Editore: Mondadori, Prezzo: 22.0 }
+  LIBRO{ CodiceLibro: 7, Titolo: Le voci del bosco, Editore: Biblioteca dell'Immagine, Prezzo: 11.0 }
+  LIBRO{ CodiceLibro: 8, Titolo: Finchè il cuculo canta, Editore: Biblioteca dell'Immagine, Prezzo: 11.36 }
+  LIBRO{ CodiceLibro: 9, Titolo: I Fantasmi di pietra, Editore: Mondadori, Prezzo: 17.0 }
+GENERE{ CodiceGenere: 4 Descrizione: Viaggi }
+  LIBRO{ CodiceLibro: 10, Titolo: Un indovino mi disse, Editore: Longanesi, Prezzo: 25.0 }
+        LIBRERIA{ CodiceLibreria: 1, Nome: Moderna, COPIE: 1 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 2 }
+GENERE{ CodiceGenere: 6 Descrizione: Romanzo }
+  LIBRO{ CodiceLibro: 1, Titolo: Gomorra, Editore: Mondadori, Prezzo: 21.5 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 20 }
+  LIBRO{ CodiceLibro: 11, Titolo: L'alchimista, Editore: Bompiani, Prezzo: 18.0 }
+  LIBRO{ CodiceLibro: 12, Titolo: Il Cammino di Santiago, Editore: Bompiani, Prezzo: 18.0 }
+        LIBRERIA{ CodiceLibreria: 3, Nome: Feltrinelli, COPIE: 2 }
+GENERE{ CodiceGenere: 8 Descrizione: Informatica }
+  LIBRO{ CodiceLibro: 13, Titolo: Java  Tecniche avanzate, Editore: Pearson-Prentice Hall, Prezzo: 62.0 }
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Nuovi_Arrivi>
+	<CodiceLibreria>3</CodiceLibreria>
+	<Lista_Libri>
+		<Libro>
+			<Codice>14</Codice>
+			<Titolo>L'isola Misteriosa</Titolo>
+			<Editore>Marsilio</Editore>
+			<Prezzo>12.0</Prezzo>
+			<Genere>Letteratura Europea</Genere>
+			<Lista_Autori/>
+		</Libro>
+		<Libro>
+			<Codice>15</Codice>
+			<Titolo>Maze Runner-La rivelazione</Titolo>
+			<Editore>Fanucci</Editore>
+			<Prezzo>10.0</Prezzo>
+			<Genere>Gialli</Genere>
+			<Lista_Autori/>
+		</Libro>
+		<Libro>
+			<Codice>0</Codice>
+			<Titolo>Il vecchio e il mare</Titolo>
+			<Editore>Mondadori</Editore>
+			<Prezzo>2.0</Prezzo>
+			<Genere/>
+			<Lista_Autori/>
+		</Libro>
+	</Lista_Libri>
+	<CodiceLibreria>4</CodiceLibreria>
+</Nuovi_Arrivi>
