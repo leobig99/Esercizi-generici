@@ -1,0 +1,146 @@
+PRAGMA foreign_keys = ON;
+DROP TABLE IF EXISTS tblGenere;
+CREATE TABLE tblGenere (
+CodiceGenere INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL,
+Descrizione TEXT
+);
+INSERT INTO tblGenere VALUES(1,"Letteratura Europea");
+INSERT INTO tblGenere VALUES(2,"Letteratura Italiana");
+INSERT INTO tblGenere VALUES(3,"Poesie");
+INSERT INTO tblGenere VALUES(4,"Viaggi");
+INSERT INTO tblGenere VALUES(5,"Gialli");
+INSERT INTO tblGenere VALUES(6,"Romanzo");
+INSERT INTO tblGenere VALUES(7,"Storico");
+INSERT INTO tblGenere VALUES(8,"Informatica");
+
+
+DROP TABLE IF EXISTS tblAutore;
+CREATE TABLE tblAutore (
+CodiceAutore INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+Cognome TEXT,
+Nome TEXT
+);
+INSERT INTO tblAutore VALUES(1,"Saviano","Roberto");
+INSERT INTO tblAutore VALUES(2,"Grisham","John");
+INSERT INTO tblAutore VALUES(3,"Corona","Mauro");
+INSERT INTO tblAutore VALUES(4,"Coelho","Paulo");
+INSERT INTO tblAutore VALUES(5,"Terzani","Tiziano");
+INSERT INTO tblAutore VALUES(6,"Horstmann","Cay S.");
+INSERT INTO tblAutore VALUES(7,"Cornell","Gary");
+
+
+DROP TABLE IF EXISTS tblLibreria;
+CREATE TABLE tblLibreria (
+CodiceLibreria INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL,
+Nome TEXT,
+Citta TEXT, 
+Via TEXT,
+Numero TEXT,
+Provincia TEXT,
+Telefono TEXT,
+Email TEXT
+);
+INSERT INTO tblLibreria VALUES(1,"Moderna","Mestre","Piazza Ferretto","1","Ve",NULL,NULL);
+INSERT INTO tblLibreria VALUES(2,"Il Libro","Favaro Veneto","Centrale","1","Ve",NULL,NULL);
+INSERT INTO tblLibreria VALUES(3,"Feltrinelli","Mestre","Fapanni","3","Ve",NULL,NULL);
+
+
+DROP TABLE IF EXISTS tblLibro;
+CREATE TABLE tblLibro (
+CodiceLibro INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL,
+Titolo TEXT, 
+CodiceGenere INTEGER NOT NULL, 
+Editore TEXT,
+Prezzo REAL DEFAULT 0.0,
+FOREIGN KEY(CodiceGenere) REFERENCES tblGenere(CodiceGenere) 
+);
+CREATE INDEX indLibroGenere ON tblLibro (CodiceGenere ASC);
+INSERT INTO tblLibro VALUES (1,"Gomorra",6,"Mondadori",21.50);
+INSERT INTO tblLibro VALUES (2,"La giuria",5,"Mondadori",8.80);
+INSERT INTO tblLibro VALUES (3,"Il Testamento",5,"Mondadori",8.80);
+INSERT INTO tblLibro VALUES (4,"Il Cliente",5,"Mondadori",8.80);
+INSERT INTO tblLibro VALUES (5,"Il Socio",5,"Mondadori",8.80);
+INSERT INTO tblLibro VALUES (6,"Storie di neve",2,"Mondadori",22.00);
+INSERT INTO tblLibro VALUES (7,"Le voci del bosco",2,"Biblioteca dell'Immagine",11.00);
+INSERT INTO tblLibro VALUES (8,"Finchè il cuculo canta",2,"Biblioteca dell'Immagine",11.36);
+INSERT INTO tblLibro VALUES (9,"I Fantasmi di pietra",2,"Mondadori",17.00);
+INSERT INTO tblLibro VALUES (10,"Un indovino mi disse",4,"Longanesi",25.00);
+INSERT INTO tblLibro VALUES (11,"L'alchimista",6,"Bompiani",18.00);
+INSERT INTO tblLibro VALUES (12,"Il Cammino di Santiago",6,"Bompiani",18.00);
+INSERT INTO tblLibro VALUES (13,"Java – Tecniche avanzate",8,"Pearson-Prentice Hall",62.00);
+
+
+DROP TABLE IF EXISTS tblScorta;
+CREATE TABLE tblScorta(
+CodiceLibro INTEGER NOT NULL,
+CodiceLibreria INTEGER NOT NULL,
+Copie INTEGER DEFAULT 0,
+FOREIGN KEY (CodiceLibro) REFERENCES tblLibro (CodiceLibro)
+FOREIGN KEY (CodiceLibreria) REFERENCES tblLibreria(CodiceLibreria),
+PRIMARY KEY (CodiceLibro, CodiceLibreria)
+);
+INSERT INTO tblScorta VALUES (1,1,0);
+INSERT INTO tblScorta VALUES (1,2,0);
+INSERT INTO tblScorta VALUES (1,3,20);
+INSERT INTO tblScorta VALUES (8,2,0);
+INSERT INTO tblScorta VALUES (8,3,0);
+INSERT INTO tblScorta VALUES (10,1,1);
+INSERT INTO tblScorta VALUES (10,2,0);
+INSERT INTO tblScorta VALUES (10,3,3);
+INSERT INTO tblScorta VALUES (12,1,2);
+INSERT INTO tblScorta VALUES (12,2,1);
+INSERT INTO tblScorta VALUES (12,3,2);
+INSERT INTO tblScorta VALUES (13,1,0);
+INSERT INTO tblScorta VALUES (13,2,2);
+INSERT INTO tblScorta VALUES (13,3,1);
+
+
+DROP TABLE IF EXISTS tblVendita;
+CREATE TABLE tblVendita(
+Progressivo INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE,
+CodiceLibro INTEGER NOT NULL,
+CodiceLibreria INTEGER NOT NULL,
+Copie INTEGER DEFAULT 0,
+FOREIGN KEY (CodiceLibro) REFERENCES tblLibro(CodiceLibro)
+FOREIGN KEY (CodiceLibreria) REFERENCES tblLibreria(CodiceLibreria)
+);
+INSERT INTO tblVendita VALUES (1,13,3,6);
+INSERT INTO tblVendita VALUES (2,13,2,15);
+INSERT INTO tblVendita VALUES (3,1,3,150);
+INSERT INTO tblVendita VALUES (4,1,1,220);
+INSERT INTO tblVendita VALUES (5,1,2,63);
+INSERT INTO tblVendita VALUES (6,8,2,35);
+INSERT INTO tblVendita VALUES (7,8,3,121);
+INSERT INTO tblVendita VALUES (8,8,1,262);
+INSERT INTO tblVendita VALUES (9,9,2,30);
+INSERT INTO tblVendita VALUES (10,12,3,27);
+INSERT INTO tblVendita VALUES (11,12,2,62);
+INSERT INTO tblVendita VALUES (12,12,1,101);
+
+DROP TABLE IF EXISTS tbrLibroAutore;
+CREATE TABLE tbrLibroAutore(
+CodiceLibro INTEGER NOT NULL,
+CodiceAutore INTEGER NOT NULL,
+ProgressivoAutore INTEGER,
+FOREIGN KEY (CodiceLibro) REFERENCES tblLibro(CodiceLibro)
+FOREIGN KEY (CodiceAutore) REFERENCES tblAutore(CodiceAutore),
+PRIMARY KEY (CodiceAutore, CodiceLibro)
+);
+INSERT INTO tbrLibroAutore VALUES(1,1,1);
+INSERT INTO tbrLibroAutore VALUES(2,2,1);
+INSERT INTO tbrLibroAutore VALUES(3,2,1);
+INSERT INTO tbrLibroAutore VALUES(4,2,1);
+INSERT INTO tbrLibroAutore VALUES(5,2,1);
+INSERT INTO tbrLibroAutore VALUES(6,3,1);
+INSERT INTO tbrLibroAutore VALUES(7,3,1);
+INSERT INTO tbrLibroAutore VALUES(8,3,1);
+INSERT INTO tbrLibroAutore VALUES(9,3,1);
+INSERT INTO tbrLibroAutore VALUES(10,5,1);
+INSERT INTO tbrLibroAutore VALUES(11,4,1);
+INSERT INTO tbrLibroAutore VALUES(12,4,1);
+INSERT INTO tbrLibroAutore VALUES(13,6,1);
+INSERT INTO tbrLibroAutore VALUES(13,7,2);
+CREATE  VIEW qryAutoriLibri AS 
+SELECT tblAutore.CodiceAutore, Cognome, Nome, ProgressivoAutore, CodiceLIbro FROM tblAutore, tbrLibroAutore
+WHERE tblAutore.CodiceAutore = tbrLibroAutore.CodiceAutore;
+INSERT INTO tbrLibroAutore VALUES(13,15,3);

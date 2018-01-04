@@ -1,0 +1,8 @@
+.open Agenda.sqlite
+PRAGMA foreign_keys = ON;
+DROP TABLE IF EXISTS tblPromemoria;
+CREATE TABLE tblPromemoria (IdPromemoria INTEGER PRIMARY KEY AUTOINCREMENT,Descrizione TEXT NOT NULL,Data DATE,Ora TIME,Durata INTEGER,Preavviso DATE,Ricorrenza DATE,Scaduto BOOLEAN DEFAULT FALSE,IdPersona INTEGER NOT NULL,FOREIGN KEY (IdPersona) REFERENCES tblPersona(ID));
+DROP TABLE IF EXISTS tblAppuntamento;
+CREATE TABLE tblAppuntamento(ID INTEGER PRIMARY KEY AUTOINCREMENT,Scaduto BOOLEAN DEFAULT FALSE,NumeroPersone INTEGER NOT NULL,IdProm INTEGER NOT NULL,FOREIGN KEY (IdProm) REFERENCES tblpromemoria(IdPromemoria));
+DROP TABLE IF EXISTS tbrPersonaAppuntamento;
+CREATE TABLE tbrPersonaAppuntamento (IdPersona INTEGER NOT NULL,IdAppuntamento INTEGER NOT NULL,PRIMARY KEY (IdPersona,IdAppuntamento),FOREIGN KEY (IdAppuntamento) REFERENCES tblAppuntamento(ID),FOREIGN KEY (IdPersona) REFERENCES tblPersona(ID));

@@ -1,0 +1,4 @@
+tblPersona(ID,Cognome,Nome,Mail,Username,Password)
+tblAppuntamento(ID,Scaduto,NumeroPersone,IdProm)
+tblPromemoria(IdPromemoria,Descrizione,Data,Ora,Durata,Preavviso,Ricorrenza,Scaduto,IdPersona)
+tbrPersonaAppuntamento(IdPersona,IdAppuntamento)

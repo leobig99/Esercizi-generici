@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda.FXMLCancellaPromemoriaController">
+   <children>
+      <Text fill="BLUE" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancella Promemoria" textAlignment="CENTER" wrappingWidth="599.9999913573265">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="345.0" layoutY="274.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Button layoutX="223.0" layoutY="274.0" mnemonicParsing="false" onAction="#esegui" text="Esegui" />
+      <Label fx:id="label" layoutX="286.0" layoutY="339.0" />
+      <TextField fx:id="data" layoutX="306.0" layoutY="136.0" />
+      <TextField fx:id="ora" layoutX="306.0" layoutY="188.0" />
+      <TextField fx:id="descrizione" layoutX="306.0" layoutY="86.0" />
+      <Text layoutX="187.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrizione" />
+      <Text layoutX="210.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+      <Text layoutX="213.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ora" />
+      <Label fx:id="label" layoutX="292.0" layoutY="348.0" />
+   </children>
+</AnchorPane>
