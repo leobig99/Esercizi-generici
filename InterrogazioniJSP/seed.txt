@@ -1,0 +1,10 @@
+.open database.db
+INSERT INTO tblStudente VALUES('ANDZCC99','Andrea','Zoccarato',18,1);
+INSERT INTO tblStudente VALUES('LEOBIGG99','Leonardo','Bigetti',14,2);
+INSERT INTO tblDocente VALUES('CSALCSAL','Carlo','Salvagno',50,3);
+INSERT INTO tblGiornata VALUES('2018-02-5',1);
+INSERT INTO tblInterrogazione(Girone,Matricola,Giorno) VALUES('1','LEOBIGG99','2018-02-5');
+INSERT INTO tblInterrogazione(Girone,Matricola,Giorno) VALUES('1','ANDZCC99','2018-02-5');
+INSERT INTO tblCredenziali(Username,Password) VALUES('andrea','andreaz001');
+INSERT INTO tblCredenziali(Username,Password) VALUES('leo','leo001');
+INSERT INTO tblCredenziali(Username,Password) VALUES('csal','csal001');
